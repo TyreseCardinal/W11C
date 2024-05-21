@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Battle Simulator</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Homepage -->
+    <div id="homepage">
+      <h1>Pick Your Pokémon</h1>
+      <div class="pokemon-choice" data-pokemon="Pikachu">Pikachu</div>
+      <div class="pokemon-choice" data-pokemon="Charmander">Charmander</div>
+      <div class="pokemon-choice" data-pokemon="Squirtle">Squirtle</div>
+    </div>
+
+    <!-- Battle Page -->
+    <div id="battlepage" style="display: none;">
+      <h1>Battle!</h1>
+      <div id="user-pokemon">
+        <h2 id="user-pokemon-name"></h2>
+        <img id="user-pokemon-image" src="" alt="">
+        <div id="user-pokemon-health"></div>
+        <button id="attack-button">Attack</button>
+      </div>
+      <div id="enemy-pokemon">
+        <h2 id="enemy-pokemon-name"></h2>
+        <img id="enemy-pokemon-image" src="" alt="">
+        <div id="enemy-pokemon-health"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
